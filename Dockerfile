@@ -1,5 +1,5 @@
 # Use the official Node.js LTS image as the base
-FROM node:18
+FROM node:22
 
 # Set working directory
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --force
 
 # Copy the rest of the application code
 COPY . .
