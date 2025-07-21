@@ -17,10 +17,11 @@ COPY . .
 RUN npm run build
 
 # Install serve globally to serve the production build
-RUN npm install -g serve
+# RUN npm install -g serve
 
 # Expose the port serve uses
 EXPOSE 3000
 
 # Start the production server
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["npm", "run", "start"]
