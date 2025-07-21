@@ -1,0 +1,128 @@
+import { Github, Twitter, DiscIcon as Discord, Mail, Shield, Terminal, Users, Zap } from "lucide-react"
+import Link from "next/link"
+
+export default function ComingSoon() {
+  return (
+    <div className="min-h-screen bg-black text-green-400 font-mono relative overflow-hidden">
+      {/* Background grid pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
+
+      {/* Animated red glow */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-600/5 rounded-full blur-3xl animate-pulse delay-1000" />
+
+      <div className="relative z-10 flex flex-col min-h-screen">
+        {/* Header */}
+        <header className="p-6 border-b border-red-900/30">
+          <div className="container mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Terminal className="h-8 w-8 text-red-500" />
+              <span className="text-xl font-bold text-white">ScamBaitVillage</span>
+            </div>
+            <div className="hidden md:flex items-center space-x-4 text-sm">
+              <span className="text-red-400">[DEFCON_VILLAGE]</span>
+              <span className="text-gray-500">|</span>
+              <span className="text-green-400">STATUS: INITIALIZING</span>
+            </div>
+          </div>
+        </header>
+
+        {/* Main Content */}
+        <main className="flex-1 flex items-center justify-center p-6">
+          <div className="container mx-auto text-center max-w-4xl">
+            {/* Terminal-style coming soon */}
+            <div className="bg-gray-900/50 border border-red-900/30 rounded-lg p-8 mb-8 backdrop-blur-sm">
+              <div className="flex items-center mb-4 text-red-400 text-sm">
+                <span className="mr-2">root@scambaitvillage:~$</span>
+                <span className="animate-pulse">_</span>
+              </div>
+
+              {/* ASCII Logo Display */}
+              <div className="bg-black/80 border border-red-500/30 rounded-md p-6 mb-6 font-mono text-xs md:text-sm overflow-x-auto">
+                <div className="text-red-500 whitespace-pre leading-tight">
+                  {`
+ ███████╗ ██████╗ █████╗ ███╗   ███╗██████╗  █████╗ ██╗████████╗
+ ██╔════╝██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔══██╗██║╚══██╔══╝
+ ███████╗██║     ███████║██╔████╔██║██████╔╝███████║██║   ██║   
+ ╚════██║██║     ██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║██║   ██║   
+ ███████║╚██████╗██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║██║   ██║   
+ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝   
+`}
+                </div>
+                <div className="text-white mt-2 text-center">
+                  <span className="text-red-400">VILLAGE</span> <span className="text-gray-500">|</span>{" "}
+                  <span className="text-green-400">DEFCON 32</span>
+                </div>
+              </div>
+
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 animate-pulse">
+                COMING SOON
+              </h1>
+            </div>
+
+            {/* Description */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-6 backdrop-blur-sm">
+                <Shield className="h-12 w-12 text-red-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-white mb-2">Scam Baiting</h3>
+                <p className="text-gray-300 text-sm">
+                  Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.
+                </p>
+              </div>
+
+              <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-6 backdrop-blur-sm">
+                <Users className="h-12 w-12 text-red-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-white mb-2">DefCon Village</h3>
+                <p className="text-gray-300 text-sm">
+                  Experience the ultimate scam baiting community at DefCon. Network, learn, and collaborate.
+                </p>
+              </div>
+
+              <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-6 backdrop-blur-sm">
+                <Zap className="h-12 w-12 text-red-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-white mb-2">Elite Training</h3>
+                <p className="text-gray-300 text-sm">
+                  Advanced workshops, tools, and methodologies for effective scam baiting operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="border-t border-red-900/30 p-6 bg-gray-900/20 backdrop-blur-sm">
+          <div className="container mx-auto">
+            <div className="mb-6">
+              <h4 className="text-white font-bold mb-3 text-center">Connect</h4>
+              <div className="flex justify-center space-x-6">
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <Twitter className="h-6 w-6" />
+                  <span className="sr-only">Twitter</span>
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <Discord className="h-6 w-6" />
+                  <span className="sr-only">Discord</span>
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <Github className="h-6 w-6" />
+                  <span className="sr-only">GitHub</span>
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <Mail className="h-6 w-6" />
+                  <span className="sr-only">Email</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="border-t border-red-900/30 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+              <p>&copy; 2024 ScamBaitVillage. All rights reserved.</p>
+              <p className="mt-2 md:mt-0">
+                <span className="text-red-400">{">"}</span> Protecting the digital frontier
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  )
+}
