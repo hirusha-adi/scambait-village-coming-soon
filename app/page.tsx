@@ -1,7 +1,12 @@
+"use client"
+
 import { Github, Twitter, DiscIcon as Discord, Mail, Shield, Terminal, Users, Zap } from "lucide-react"
 import Link from "next/link"
+import { Typewriter } from 'react-simple-typewriter'
+
 
 export default function ComingSoon() {
+
   return (
     <div className="min-h-screen bg-black text-green-400 font-mono relative overflow-hidden">
       {/* Background grid pattern */}
@@ -17,12 +22,12 @@ export default function ComingSoon() {
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Terminal className="h-8 w-8 text-red-500" />
-              <span className="text-xl font-bold text-white">ScamBaitVillage</span>
+              <span className="text-xl font-bold text-white">Scam Bait Village</span>
             </div>
             <div className="hidden md:flex items-center space-x-4 text-sm">
               <span className="text-red-400">[DEFCON_VILLAGE]</span>
               <span className="text-gray-500">|</span>
-              <span className="text-green-400">STATUS: INITIALIZING</span>
+              <span className="text-green-400">UNDER DEVELOPMENT</span>
             </div>
           </div>
         </header>
@@ -39,25 +44,30 @@ export default function ComingSoon() {
 
               {/* ASCII Logo Display */}
               <div className="bg-black/80 border border-red-500/30 rounded-md p-6 mb-6 font-mono text-xs md:text-sm overflow-x-auto">
-                <div className="text-red-500 whitespace-pre leading-tight">
+                <div className="flex items-center justify-center">
+                  <div className="my-5">
+                    <img src="/logo.png" alt="Logo" className="w-72" />
+                  </div>
+                </div>
+                {/* <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 animate-pulse"> */}
+                <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6">
                   {`
- ███████╗ ██████╗ █████╗ ███╗   ███╗██████╗  █████╗ ██╗████████╗
- ██╔════╝██╔════╝██╔══██╗████╗ ████║██╔══██╗██╔══██╗██║╚══██╔══╝
- ███████╗██║     ███████║██╔████╔██║██████╔╝███████║██║   ██║   
- ╚════██║██║     ██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║██║   ██║   
- ███████║╚██████╗██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║██║   ██║   
- ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝   
+ ██████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗     ███████╗ ██████╗  ██████╗ ███╗   ██╗██╗
+██╔════╝██╔═══██╗████╗ ████║██║████╗  ██║██╔════╝     ██╔════╝██╔═══██╗██╔═══██╗████╗  ██║██║
+██║     ██║   ██║██╔████╔██║██║██╔██╗ ██║██║  ███╗    ███████╗██║   ██║██║   ██║██╔██╗ ██║██║
+██║     ██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║    ╚════██║██║   ██║██║   ██║██║╚██╗██║╚═╝
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝    ███████║╚██████╔╝╚██████╔╝██║ ╚████║██╗
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝
+                                                                                             
 `}
                 </div>
                 <div className="text-white mt-2 text-center">
-                  <span className="text-red-400">VILLAGE</span> <span className="text-gray-500">|</span>{" "}
-                  <span className="text-green-400">DEFCON 32</span>
+                  {/* <span className="text-red-400">VILLAGE</span> <span className="text-gray-500">|</span>{" "} */}
+                  <span className="text-green-400 text-4xl min-h-32">
+                    <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
+                  </span>
                 </div>
               </div>
-
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 animate-pulse">
-                COMING SOON
-              </h1>
             </div>
 
             {/* Description */}
@@ -115,7 +125,7 @@ export default function ComingSoon() {
             </div>
 
             <div className="border-t border-red-900/30 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-              <p>&copy; 2024 ScamBaitVillage. All rights reserved.</p>
+              <p>&copy; 2025 ScamBaitVillage. All rights reserved.</p>
               <p className="mt-2 md:mt-0">
                 <span className="text-red-400">{">"}</span> Protecting the digital frontier
               </p>
