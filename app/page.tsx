@@ -22,10 +22,10 @@ export default function ComingSoon() {
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Terminal className="h-8 w-8 text-red-500" />
-              <span className="text-xl font-bold text-white">Scam Bait Village</span>
+              <span className="text-xl font-bold text-white">Scambait Village</span>
             </div>
             <div className="hidden md:flex items-center space-x-4 text-sm">
-              <span className="text-red-400">[DEFCON_VILLAGE]</span>
+              <span className="text-red-400">[@DEFCON 33]</span>
               <span className="text-gray-500">|</span>
               <span className="text-green-400">UNDER DEVELOPMENT</span>
             </div>
@@ -74,7 +74,7 @@ export default function ComingSoon() {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-6 backdrop-blur-sm">
                 <Shield className="h-12 w-12 text-red-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-white mb-2">Scam Baiting</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Scambaiting</h3>
                 <p className="text-gray-300 text-sm">
                   Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.
                 </p>
