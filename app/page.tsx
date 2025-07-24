@@ -63,9 +63,9 @@ export default function ComingSoon() {
                 </div>
                 <div className="text-white mt-2 text-center">
                   {/* <span className="text-red-400">VILLAGE</span> <span className="text-gray-500">|</span>{" "} */}
-                  <span className="text-green-400 text-4xl min-h-32">
+                  <div className="text-green-400 text-4xl min-h-16">
                     <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
