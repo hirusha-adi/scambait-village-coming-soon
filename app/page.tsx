@@ -133,12 +133,10 @@ export default function ComingSoon() {
               </div>
             </div>
 
-            <div className="border-t border-red-900/30 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-              <p>&copy; 2025 ScamBaitVillage. All rights reserved.</p>
-              <p className="mt-2 md:mt-0">
-                <span className="text-red-400">{">"}</span> Coming Soon!
-              </p>
+            <div className="border-t border-red-900/30 pt-6 flex flex-col items-center justify-center text-sm text-gray-500">
+              <p>&copy; 2025 Scambait Village. All rights reserved.</p>
             </div>
+
           </div>
         </footer>
       </div>
