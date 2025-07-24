@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     siteName: 'Scambait Village',
     images: [
       {
-        url: '/meta-image.png',
-        width: 1200,
-        height: 630,
+        url: '/logo.png',
+        // width: 1200,
+        // height: 630,
         alt: 'Scambait Village Banner',
       },
     ],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Scambait Village',
     description: 'Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.',
-    images: ['/meta-image.png'],
+    images: ['/logo.png'],
     creator: '@ScambaitVillage',
   },
 }
