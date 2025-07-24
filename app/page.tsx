@@ -42,9 +42,9 @@ export default function ComingSoon() {
                 <span className="animate-pulse">_</span>
               </div>
 
-              {/* ASCII Logo Display */}
               <div className="bg-black/80 border border-red-500/30 rounded-md p-6 mb-6 font-mono text-xs md:text-sm overflow-x-auto">
                 <div className="flex items-center justify-center">
+                  {/* ACTUAL IMAGE GOES HERE */}
                   <div className="my-5">
                     <img src="/logo.png" alt="Logo" className="w-72" />
                   </div>
