@@ -47,7 +47,7 @@ export default function ComingSoon() {
                 <div className="relative flex items-center justify-center h-64 my-8">
                   {/* Left Image - slightly behind */}
                   <img
-                    src="/logo-scammerinfo.png"
+                    src="/logo-si.png"
                     alt="Left Logo"
                     className="w-44 md:w-52 rounded absolute left-1/2 -translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
                   />
