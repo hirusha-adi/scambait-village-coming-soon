@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: 'Scambait Village',
   description: 'Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.',
   generator: 'scambait-village',
-  metadataBase: new URL('https://scambaitvillage.com'), // Or your real domain like https://scambaitvillage.com
+  metadataBase: new URL('https://scambaitvillage.com'),
   openGraph: {
     title: 'Scambait Village',
     description: 'Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.',
-    url: 'https://scambaitvillage.com', // Replace with your actual URL
+    url: 'https://scambaitvillage.com',
     siteName: 'Scambait Village',
     images: [
       {
