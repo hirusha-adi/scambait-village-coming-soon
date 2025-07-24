@@ -43,11 +43,26 @@ export default function ComingSoon() {
               </div>
 
               <div className="bg-black/80 border border-red-500/30 rounded-md p-6 mb-6 font-mono text-xs md:text-sm overflow-x-auto">
-                <div className="flex items-center justify-center">
-                  {/* ACTUAL IMAGE GOES HERE */}
-                  <div className="my-5">
-                    <img src="/logo.png" alt="Logo" className="w-72" />
-                  </div>
+                {/* Actual images */}
+                <div className="relative flex items-center justify-center h-64 my-8">
+                  {/* Left Image - slightly behind */}
+                  <img
+                    src="/logo-scammerinfo.png"
+                    alt="Left Logo"
+                    className="w-44 md:w-52 rounded absolute left-1/2 -translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                  />
+                  {/* Right Image - slightly behind */}
+                  <img
+                    src="/logo-jht.png"
+                    alt="Right Logo"
+                    className="w-44 md:w-52 rounded absolute left-1/2 translate-x-[60%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                  />
+                  {/* Center Image - on top */}
+                  <img
+                    src="/logo.png"
+                    alt="Center Logo"
+                    className="w-56 md:w-72 rounded z-20 hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
+                  />
                 </div>
                 {/* <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 animate-pulse"> */}
                 <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6">
