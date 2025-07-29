@@ -38,40 +38,47 @@ export default function ComingSoon() {
             {/* Terminal-style coming soon */}
             <div className="bg-gray-900/50 border border-red-900/30 rounded-lg p-4 md:p-8 mb-6 md:mb-8 backdrop-blur-sm">
               <div className="flex items-center mb-2 md:mb-4 text-red-400 text-xs md:text-sm">
-          <span className="mr-2">root@scambaitvillage:~$</span>
-          <span className="animate-pulse">_</span>
+                <span className="mr-2">root@scambaitvillage:~$</span>
+                <span className="animate-pulse">_</span>
               </div>
 
               <div className="bg-black/80 border border-red-500/30 rounded-md p-3 md:p-6 mb-4 md:mb-6 font-mono text-xs md:text-sm overflow-x-auto">
-          {/* Actual images */}
-          <div className="relative flex items-center justify-center h-40 md:h-64 my-2 md:my-8">
-            {/* Left Image - slightly behind */}
-            <img
-              src="/logo-si.png"
-              alt="Left Logo"
-              className="w-24 md:w-44 rounded absolute left-1/2 -translate-x-[120%] md:-translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
-            />
-            {/* Right Image - slightly behind */}
-            <img
-              src="/logo-jht.png"
-              alt="Right Logo"
-              className="w-24 md:w-44 rounded absolute left-1/2 translate-x-[40%] md:translate-x-[60%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
-            />
-            {/* Center Image - on top */}
-            <img
-              src="/logo.png"
-              alt="Center Logo"
-              className="w-24 md:w-64 rounded z-20 hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
-            />
-          </div>
+                {/* Actual images */}
+                <div className="relative flex items-center justify-center h-40 md:h-64 my-2 md:my-8">
+                  {/* Left Image - slightly behind */}
+                  <img
+                    src="/logo-si.png"
+                    alt="Left Logo"
+                    className="w-24 md:w-44 rounded absolute left-1/2 -translate-x-[120%] md:-translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                  />
+                  {/* Right Image - slightly behind */}
+                  <img
+                    src="/logo-jht.png"
+                    alt="Right Logo"
+                    className="w-24 md:w-44 rounded absolute left-1/2 translate-x-[40%] md:translate-x-[60%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                  />
+                  {/* Center Image - on top */}
+                  <img
+                    src="/logo.png"
+                    alt="Center Logo"
+                    className="w-24 md:w-64 rounded z-20 hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
+                  />
+                </div>
 
 
 
 
 
-          <div className="text-red-500 font-extrabold mb-4 md:mb-6 text-3xl md:text-4xl tracking-widest" style={{ fontFamily: 'monospace', fill: 'black', shapeRendering: 'crispEdges' }}>
-            Coming Soon!
-          </div>
+                <div
+                  className="text-red-500 font-extrabold mb-4 md:mb-6 text-3xl md:text-4xl tracking-widest"
+                  style={{
+                    fontFamily: '"Press Start 2P", monospace',
+                    fill: 'black',
+                    shapeRendering: 'crispEdges'
+                  }}
+                >
+                  Coming Soon!
+                </div>
 
 
 
@@ -80,19 +87,20 @@ export default function ComingSoon() {
 
 
 
-          <div className="text-white mt-2 text-center">
-            <div className="text-green-400 text-2xl md:text-4xl min-h-8 md:min-h-16">
-              <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
-            </div>
-          </div>
+
+                <div className="text-white mt-2 text-center">
+                  <div className="text-green-400 text-2xl md:text-4xl min-h-8 md:min-h-16">
+                    <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Description */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
               <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-4 md:p-6 backdrop-blur-sm mb-4 md:mb-0">
-          <Shield className="h-10 w-10 md:h-12 md:w-12 text-red-500 mx-auto mb-2 md:mb-4" />
-          <p className="text-gray-300 text-xs md:text-sm"></p>
+                <Shield className="h-10 w-10 md:h-12 md:w-12 text-red-500 mx-auto mb-2 md:mb-4" />
+                <p className="text-gray-300 text-xs md:text-sm"></p>
                 <h3 className="text-xl font-bold text-white mb-2">Scambaiting</h3>
                 <p className="text-gray-300 text-sm">
                   Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.
