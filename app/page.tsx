@@ -44,7 +44,7 @@ export default function ComingSoon() {
 
               <div className="bg-black/80 border border-red-500/30 rounded-md p-3 md:p-6 mb-4 md:mb-6 font-mono text-xs md:text-sm overflow-x-auto">
           {/* Actual images */}
-          <div className="relative flex items-center justify-center h-40 md:h-64 my-4 md:my-8">
+          <div className="relative flex items-center justify-center h-40 md:h-64 my-2 md:my-8">
             {/* Left Image - slightly behind */}
             <img
               src="/logo-si.png"
