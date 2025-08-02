@@ -70,7 +70,7 @@ export default function ComingSoon() {
 
 
                 <div
-                  className="text-red-500 font-extrabold mb-4 md:mb-6 text-3xl md:text-4xl tracking-widest"
+                  className="text-red-500 font-extrabold mb-4 md:mb-6 text-4xl md:text-6xl tracking-widest"
                   style={{
                     fontFamily: '"Press Start 2P", monospace',
                     fill: 'black',
