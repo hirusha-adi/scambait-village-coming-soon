@@ -65,10 +65,6 @@ export default function ComingSoon() {
                   />
                 </div>
 
-
-
-
-
                 <div
                   className="text-red-500 font-extrabold mb-4 md:mb-6 text-4xl md:text-6xl tracking-widest"
                   style={{
@@ -80,16 +76,8 @@ export default function ComingSoon() {
                   Coming Soon!
                 </div>
 
-
-
-
-
-
-
-
-
                 <div className="text-white mt-2 text-center">
-                  <div className="text-green-400 text-2xl md:text-4xl min-h-8 min-h-24 md:min-h-16">
+                  <div className="text-green-400 text-xl md:text-3xl min-h-8 min-h-20 md:min-h-16">
                     <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
                   </div>
                 </div>
