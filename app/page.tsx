@@ -33,52 +33,51 @@ export default function ComingSoon() {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 flex items-center justify-center p-6">
+        <main className="flex-1 flex items-center justify-center p-4 md:p-6">
           <div className="container mx-auto text-center max-w-4xl">
             {/* Terminal-style coming soon */}
-            <div className="bg-gray-900/50 border border-red-900/30 rounded-lg p-8 mb-8 backdrop-blur-sm">
-              <div className="flex items-center mb-4 text-red-400 text-sm">
+            <div className="bg-gray-900/50 border border-red-900/30 rounded-lg p-4 md:p-8 mb-6 md:mb-8 backdrop-blur-sm">
+              <div className="flex items-center mb-2 md:mb-4 text-red-400 text-xs md:text-sm">
                 <span className="mr-2">root@scambaitvillage:~$</span>
                 <span className="animate-pulse">_</span>
               </div>
 
-              <div className="bg-black/80 border border-red-500/30 rounded-md p-6 mb-6 font-mono text-xs md:text-sm overflow-x-auto">
+              <div className="bg-black/80 border border-red-500/30 rounded-md p-3 md:p-6 mb-4 md:mb-6 font-mono text-xs md:text-sm overflow-x-auto">
                 {/* Actual images */}
-                <div className="relative flex items-center justify-center h-64 my-8">
+                <div className="relative flex items-center justify-center h-40 md:h-64 my-2 md:my-8 pt-8 md:pt-0">
                   {/* Left Image - slightly behind */}
                   <img
                     src="/logo-si.png"
                     alt="Left Logo"
-                    className="w-44 md:w-52 rounded absolute left-1/2 -translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                    className="w-24 md:w-44 rounded absolute left-1/2 -translate-x-[120%] md:-translate-x-[150%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
                   />
                   {/* Right Image - slightly behind */}
                   <img
                     src="/logo-jht.png"
                     alt="Right Logo"
-                    className="w-44 md:w-52 rounded absolute left-1/2 translate-x-[60%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
+                    className="w-24 md:w-44 rounded absolute left-1/2 translate-x-[40%] md:translate-x-[60%] z-10 hover:scale-105 transition-transform duration-300 drop-shadow-lg"
                   />
                   {/* Center Image - on top */}
                   <img
                     src="/logo.png"
                     alt="Center Logo"
-                    className="w-56 md:w-72 rounded z-20 hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
+                    className="w-24 md:w-64 rounded z-20 hover:scale-105 transition-transform duration-300 drop-shadow-2xl"
                   />
                 </div>
-                {/* <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 animate-pulse"> */}
-                <div className="text-red-500 whitespace-pre leading-tigh font-bold mb-6">
-                  {`
- ██████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗     ███████╗ ██████╗  ██████╗ ███╗   ██╗██╗
-██╔════╝██╔═══██╗████╗ ████║██║████╗  ██║██╔════╝     ██╔════╝██╔═══██╗██╔═══██╗████╗  ██║██║
-██║     ██║   ██║██╔████╔██║██║██╔██╗ ██║██║  ███╗    ███████╗██║   ██║██║   ██║██╔██╗ ██║██║
-██║     ██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║    ╚════██║██║   ██║██║   ██║██║╚██╗██║╚═╝
-╚██████╗╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝    ███████║╚██████╔╝╚██████╔╝██║ ╚████║██╗
- ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝
-                                                                                             
-`}
+
+                <div
+                  className="text-red-500 font-extrabold mb-4 md:mb-6 text-4xl md:text-6xl tracking-widest"
+                  style={{
+                    fontFamily: '"Press Start 2P", monospace',
+                    fill: 'black',
+                    shapeRendering: 'crispEdges'
+                  }}
+                >
+                  Coming Soon!
                 </div>
+
                 <div className="text-white mt-2 text-center">
-                  {/* <span className="text-red-400">VILLAGE</span> <span className="text-gray-500">|</span>{" "} */}
-                  <div className="text-green-400 text-4xl min-h-16">
+                  <div className="text-green-400 text-xl md:text-3xl min-h-8 min-h-20 md:min-h-16">
                     <Typewriter words={["@ DEFCON 33", "Expect the unexpected!"]} loop={true} typeSpeed={75} />
                   </div>
                 </div>
@@ -86,9 +85,10 @@ export default function ComingSoon() {
             </div>
 
             {/* Description */}
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-6 backdrop-blur-sm">
-                <Shield className="h-12 w-12 text-red-500 mx-auto mb-4" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
+              <div className="bg-gray-900/30 border border-red-900/20 rounded-lg p-4 md:p-6 backdrop-blur-sm mb-4 md:mb-0">
+                <Shield className="h-10 w-10 md:h-12 md:w-12 text-red-500 mx-auto mb-2 md:mb-4" />
+                <p className="text-gray-300 text-xs md:text-sm"></p>
                 <h3 className="text-xl font-bold text-white mb-2">Scambaiting</h3>
                 <p className="text-gray-300 text-sm">
                   Join the fight against scammers. Learn techniques, share experiences, and protect others from fraud.
